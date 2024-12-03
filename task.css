@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ----------- font-family -------------- */
+
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/* ---------------------------------------- */
+
+
+/* --------------- nav bar-start ---------------- */
+
+.container-1 {
+    width: 100%;
+    height: 720px;
+    background: url('https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/f55c87d06a345e9c94021f3e/3007283.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 10px 10px;
+    background-color: #3333339f;
+}
+
+.i img {
+    width: 150px;
+    height: 55px;
+    margin-left: 50px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+    /* Hover effect color */
+}
+
+.para {
+    color: #ddd;
+    font-size: 40px;
+    margin-left: 100px;
+    margin-top: 130px;
+
+}
+
+h6 {
+    color: #c95d1c;
+    font-size: 60px;
+    font-family: roboto-regular;
+}
+
+h2 {
+    font-size: 200px;
+    font-family: roboto-medium;
+}
+
+/* --------- responsive ---------- */
+
+@media only screen and (max-width: 1038px) {
+    .container-1 {
+        width: 100%;
+        height: 720px;
+        background: url('images/img-2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+
+}
+@media only screen and (max-width: 810px) {
+    .container-1 {
+        width: 100%;
+        height: 720px;
+        background: url('images/img-3.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .container-1 {
+        width: 100%;
+        height: 720px;
+        background: url('images/img-3.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+    
+    .i img {
+        width: 120px;
+        height: 45px;
+        margin-left: 20px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+        
+    }
+
+    .nav-links li {
+        margin: 10px 0 10px 20px ;
+    }
+
+    .para {
+        margin-left: 50px;
+        margin-top: 180px;
+        font-size: 30px;
+    }
+
+    h6 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 120px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .container-1 {
+        width: 100%;
+        height: 720px;
+        background: url('images/img-4.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .i img {
+        width: 100px;
+        height: 40px;
+        margin-left: 0;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+        
+    }
+
+    .nav-links li {
+        margin: 10px 0 10px 20px ;
+    }
+
+    .para {
+        margin-left: 0;
+        margin-top: 90px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    h6 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 80px;
+    }
+}
+
+/* For even smaller devices (e.g. portrait phone) */
+@media only screen and (max-width: 375px) {
+    .container-1 {
+        width: 100%;
+        height: 720px;
+        background: url('images/img-5.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+    .i img {
+        width: 80px;
+        height: 30px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .para {
+        margin-top: 140px;
+        font-size: 30px;
+    }
+
+    h6 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+}
+
+
+
+
+
+
+/* --------------- nav bar-end ---------------- */
+
+/* ------------ about ----------------- */
+.container-2 {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    margin: 110px;
+    gap: 80px;
+    font-family: roboto-regular;    
+}
+
+.one {
+    width: 500px;
+    height: 350px;
+    background: url('images/about.jpg');
+    
+    
+}
+
+.two {
+    width: 500px;
+    height: auto;
+
+}
+
+.two h3 {
+    font-size: 34px;
+    font-family: roboto-regular;
+    color: #333;
+}
+
+
+.two h5 {
+    font-size: 20px;
+    font-family: roboto-regular;
+    color: #333;
+    margin-top: 30px;
+
+}
+
+.two p {
+    color: #777;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* ------ responsive ---------- */
+
+@media only screen and (max-width: 768px) {
+    .container-2 {
+        flex-direction: column;
+        gap: 40px;
+        margin: 50px 20px ;
+        margin-left: 90px;
+        display: flex;
+        height: auto;
+    }   
+
+    .one {
+        width: 570px;
+        height: 300px;
+        background: url('images/about.jpg');
+    }
+
+    .two {
+        width: 100%;
+    }
+
+    .two h3 {
+        font-size: 28px;
+    }
+
+    .two h5 {
+        font-size: 18px;
+    }
+
+    .two p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container-2 {
+        margin: 30px 30px;
+        height: auto;
+        display: flex;
+        
+    }
+
+    .one {
+        width: 320px;
+        height: 300px;
+        margin-right: 20px;
+    }
+
+    .two h3 {
+        font-size: 24px;
+    }
+
+    .two h5 {
+        font-size: 16px;
+    }
+
+    .two p {
+        font-size: 16px;
+    }
+}
+
+
+
+/* ------------ menu background ---------- */
+
+.container-3 {
+    width: 100%;
+    height: 300px;
+    
+}
+
+.container-3 {
+    background: url('images/menu-bg.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    
+}
+ 
+.container-3 h4 {
+    font-size: 70px;
+    margin-top: 70px;
+    font-family: roboto-medium;
+}
+
+.container-3 p {
+    font-size: 25px;
+    margin-top: 30px;
+    font-family: roboto-regular ;
+}
+
+/* ------------- menu card --------------- */
+
+.container-4 {
+    max-width: 1200px;
+    margin: 80px 40px 40px 50px;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.column {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-column,
+.text-column {
+    width: 48%; /* Set width of the image and text columns to 48% of the container width */
+}
+
+.img-column img {
+    width: 100%;  /* Make the image take up the full width of its container */
+    height: auto; /* Keep the image's aspect ratio */
+    border-radius: 10px;
+}
+
+.text-column p {
+    margin: 5px 0;  /* Spacing between each text paragraph */
+    text-align: left; /* Align the text to the left */
+}
+
+.text-column .p1 {
+    font-size: 25px;
+    color: #333;
+
+}
+
+.text-column .p2 {
+    font-size: 25px;
+    color: #c95d1c;
+    font-family: "prata-regular";
+    font-weight: bold;
+
+}
+
+.text-column .p3 {
+    font-size: 20px;
+    color: #333;
+    font-family: "roboto-regular";
+
+}
+
+/* Responsive Styles for smaller screens */
+
+/* Tablet devices (max width 768px) */
+@media (max-width: 768px) {
+    .container-4 {
+        margin: 20px 20px;
+        padding: 10px;
+
+    }
+
+    .row {
+        flex-direction: column; /* Stack rows vertically on smaller screens */
+        align-items: center;
+    }
+
+    .column {
+        width: 100%; /* Each column takes full width */
+        margin-bottom: 20px;
+    }
+
+    .text-column .p1 {
+        font-size: 22px; /* Reduce font size on smaller screens */
+    }
+
+    .text-column .p2 {
+        font-size: 22px; /* Reduce font size */
+    }
+
+    .text-column .p3 {
+        font-size: 18px; /* Reduce font size */
+    }
+}
+
+/* Mobile devices (max width 480px) */
+@media (max-width: 480px) {
+    .text-column .p1 {
+        font-size: 18px; /* Smaller font size for mobile */
+    }
+
+    .text-column .p2 {
+        font-size: 18px; /* Smaller font size for mobile */
+    }
+
+    .text-column .p3 {
+        font-size: 16px; /* Smaller font size */
+    }
+}
+
+/* -------------- chef ------------------- */
+
+.container-5 {
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* First row (Text) */
+.text-row {
+    margin-left: 450px;
+    margin-bottom: 40px;
+}
+
+.text-row h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.container-5 .text-row p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    
+}
+
+/* Second row (Image cards) */
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.3);
+    width: 22%;
+    box-sizing: border-box;
+    
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.card p {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* ----------- footer -------------- */
+
+.container-6 {
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+    width: 100%;
+    height: 300px;
+    overflow-y: hidden; /* Hides the vertical scrollbar for .container */
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #c95d1c;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}

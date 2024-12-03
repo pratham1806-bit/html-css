@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="task.css">
+
+    <!-- ------------- icon link ------------- -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <style>
+        .container-7 {
+            width: 100%;
+            height: auto;
+            display: flex;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px 10px;
+            background-color: #353535;
+        }
+
+        .i img {
+            width: 150px;
+            height: 45px;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            margin-left: auto;
+            /* This will push the links to the right */
+        }
+
+        .nav-links li {
+            margin: 20px 20px;
+        }
+
+        .nav-links a {
+            color: #ddd;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #f4a261;
+            /* Hover effect color */
+        }
+
+
+        .para {
+            color: #ddd;
+            font-size: 40px;
+            margin-left: 100px;
+            margin-top: 130px;
+
+        }
+
+        h6 {
+            color: #c95d1c;
+            font-size: 60px;
+            font-family: roboto-regular;
+        }
+
+        h2 {
+            font-size: 200px;
+            font-family: roboto-medium;
+        }
+
+        /* responsive  */
+        @media only screen and (max-width: 1038px) {
+            .container-7 {
+                background: #353535;
+                width: 100%;
+                height: auto;
+                display: flex;
+
+            }
+
+
+        }
+
+        @media only screen and (max-width: 810px) {
+            .container-7 {
+                background: #353535;
+                width: 100%;
+                height: auto;
+                display: flex;
+
+            }
+
+
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            .container-7 {
+                background: #353535;
+                width: 100%;
+                height: auto;
+                display: flex;
+
+            }
+
+            .i img {
+                width: 120px;
+                height: 45px;
+                margin-left: 20px;
+            }
+
+            .nav-links {
+                flex-direction: row;
+                align-items: center;
+                margin-top: 10px;
+
+            }
+
+            .nav-links li {
+                margin: 10px 0 10px 20px;
+            }
+
+            .para {
+                margin-left: 50px;
+                margin-top: 180px;
+                font-size: 30px;
+            }
+
+            h6 {
+                font-size: 40px;
+            }
+
+            h2 {
+                font-size: 120px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+
+            .container-7 {
+                background: #353535;
+                width: 100%;
+                height: auto;
+            }
+
+            nav {
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .i img {
+                width: 100px;
+                height: 40px;
+                margin-left: 0;
+            }
+
+            .nav-links {
+                flex-direction: row;
+                align-items: center;
+                margin-top: 10px;
+
+            }
+
+            .nav-links li {
+                margin: 10px 0 10px 20px;
+            }
+
+            .para {
+                margin-left: 0;
+                margin-top: 90px;
+                font-size: 25px;
+                text-align: center;
+            }
+
+            h6 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 80px;
+            }
+        }
+
+        /* General Flexbox setup for the container */
+
+        /* For smaller devices like phones (max-width: 375px) */
+        @media only screen and (max-width: 375px) {
+            .container-7 {
+                display: flex;
+                flex-direction: column; /* Stack elements vertically */
+                justify-content: center;/* Center content vertically within container */
+                align-items: center;    /* Center content horizontally within container */
+                width: 100%;
+            }
+
+            /* Logo container: Flexbox to center image */
+            .logo-container {
+                display: flex;
+                justify-content: center;/* Center the logo horizontally */
+                width: 100%;
+                margin-bottom: 20px;    /* Add space below logo */
+            }
+
+            .logo-container img {
+                max-width: 100%;/* Ensure image does not exceed its container width */
+                height: auto;   /* Maintain aspect ratio */
+                width: 120px;   /* Adjust logo size */
+            }
+
+            /* Navigation links container */
+            .nav-links {
+                display: flex;
+                justify-content: center;/* Center the links horizontally */
+                            /* Add space between links */
+                list-style: none;       /* Remove default list styling */
+                padding: 0;
+                transform: translateX(-15px);
+            }
+
+            .nav-links li {
+                display: inline-block;
+                
+            }
+
+            .nav-links a {
+                text-decoration: none;
+                font-size: 18px;    /* Adjust font size */
+                color: white;      /* Text color */
+                padding: 0px; /* Add padding around links */
+                
+            }
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="container-7">
+            <div class="i">
+                <!-- Logo here (replace with an image or text) -->
+                <img src="images/logo-3.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#chefs">Chefs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    </nav>
+    <div>
+
+        <div class="container-2">
+            <div class="one"></div>
+            <div class="two">
+                <h3>Our Restaurant</h3>
+                <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                    diam. Sed
+                    commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo
+                    nibh.</p>
+
+                <h5>Awarded Chefs</h6>
+                    <p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec
+                        ornare diam. Sed
+                        commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container-6">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
